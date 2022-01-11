@@ -1,0 +1,6 @@
+[BROWSE CONNECTORS]: http://kube0:30083/connectors
+    [BROWSE CONNECTOR PLUGINS]: http://kube0:30083/connector-plugins
+    [APPLY CONNECTORS]: curl -d @/Users/sachin/workspace/skshukla/KubernetesSample/kafka-connect/data-share/config/oracle-connector.json \
+                    -H 'Content-Type: application/json' \
+                    -X POST http://kube0:30083/connectors
+    [DELETE CONNECTORS]: curl -X DELETE http://kube0:30083/connectors/<connector-name>
